@@ -23,35 +23,32 @@
 
 
 
-            ("""
-                  --- Account Profile ---
-1) Account Number (int) current: 0
-2) Holder Name (string) current: [not set]
-3) Balance (double) current: 0.000 OMR
-4) Account Active? (bool) current: false [enter 1=yes / 0=no]
-5) Account Type (char) current: - [enter S / C / F]
---- Customer Profile ---
-6) Employed? (bool) current: false [enter 1=yes / 0=no]
-7) Monthly Salary (double) current: 0.000 OMR
-8) Credit Score (int) current: 0
-9) Age (int) current: 0
---- Transaction Data ---
-10) Last Deposit Amount (double) current: 0.000 OMR
-11) Last Withdrawal (double) current: 0.000 OMR
-12) Annual Interest Rate (double) current: 0.000 [e.g. 0.035 = 3.5%]
-13) Avg Monthly Balance (double) current: 0.000 OMR
-0) Setup complete — launch Main Menu
-Select option: 2
-Enter holder name: Sara Al-Balushi
-Holder name set to: Sara Al-Balushi
-Select option: 3
-Enter balance (OMR): 12500.000
-Balance set to: 12500.000 OMR
-Select option: 0
-Setup complete. Launching Main Menu...
-                 """);
-            int SetUpMenue = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("""
+            --- Account Profile ---
+ 1) Account Number (int) current: 0
+ 2) Holder Name (string) current: [not set]
+ 3) Balance (double) current: 0.000 OMR
+ 4) Account Active? (bool) current: false [enter 1=yes / 0=no]
+ 5) Account Type (char) current: - [enter S / C / F]
+
+            --- Customer Profile ---
+ 6) Employed? (bool) current: false [enter 1=yes / 0=no]
+ 7) Monthly Salary (double) current: 0.000 OMR
+ 8) Credit Score (int) current: 0
+ 9) Age (int) current: 0
+
+            --- Transaction Data ---
+ 10) Last Deposit Amount (double) current: 0.000 OMR
+ 11) Last Withdrawal (double) current: 0.000 OMR
+ 12) Annual Interest Rate (double) current: 0.000 OMR  [e.g. 0.035 = 3.5%]
+ 13) Avg Monthly Balance (double) current: 0.000 OMR
+
+ 0) Setup complete — launch Main Menu
+ """);
+
             Console.WriteLine("enter your option");
+
+            int SetUpMenue = Convert.ToInt32(Console.ReadLine());
             switch (SetUpMenue)
             {
                 case 1:
@@ -70,7 +67,7 @@ Setup complete. Launching Main Menu...
                     break;
 
                 case 4:
-                    Console.WriteLine("enter account type");
+                    Console.WriteLine("is it active yes/no");
                     isActive = Convert.ToBoolean(Console.ReadLine());
                     break;
 
