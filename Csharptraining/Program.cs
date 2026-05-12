@@ -174,11 +174,17 @@
                     Console.WriteLine("'Returning to Main Menu... ");
                     break;
 
-                    ///invalid otion
+                    ///invalid option
                     default :
                     Console.WriteLine("invalid option");
                     break;
             }
+            //task3
+            Console.WriteLine(accountNumber);
+            Console.WriteLine(holderName);
+            Console.WriteLine(balance);
+            Console.WriteLine(isActive);
+            Console.WriteLine(accountType);
 
         }
     }
