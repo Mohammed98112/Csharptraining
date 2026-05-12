@@ -9,7 +9,7 @@
             string holderName = "";
             double balance = 0.000;
             bool isActive = false;
-            char accountType = 'A' ;
+            char accountType = 'A';
             bool isEmployed = false;
             double salary = 0.000;
             int creditScore = 0;
@@ -123,6 +123,7 @@
                 default:
                     Console.WriteLine("invalid option");
                     break;
+                    ///////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -133,6 +134,51 @@
 
 
 
+            //task 2
+            Console.WriteLine("=== ATM SERVICES ===");
+            Console.WriteLine("1) Bank Info");
+            Console.WriteLine("2) Branch Info");
+            Console.WriteLine("3) Opening Hours");
+            Console.WriteLine("0) Back to Main Menu");
+
+
+            Console.WriteLine("select service: ");
+            int ATMoption = Convert.ToInt32(Console.ReadLine());
+
+            switch (ATMoption)
+            {
+                ////1) Bank Info
+                case 1:
+                    Console.WriteLine("bank name: (National Bank of Oman) ");
+                    Console.WriteLine("tagline: No tax");
+                    Console.WriteLine("founding year: 1231");
+                    break;
+
+                ///2) Branch Info
+                case 2:
+                    Console.WriteLine("branch name: (Bank Muscat) ");
+                    Console.WriteLine("city: ALAMERAT Kingdom");
+                    Console.WriteLine("address: Muscat");
+                    break;
+
+                ///3) Opening Hours
+
+                case 3:
+                    Console.WriteLine("(weekday: from sunday to friday) ");
+                    Console.WriteLine("weekend: hours form 1:00 AM to 5:00 AM");
+                    break;
+
+                ///3) Returning to Main Menu
+
+                case 0:
+                    Console.WriteLine("'Returning to Main Menu... ");
+                    break;
+
+                    ///invalid otion
+                    default :
+                    Console.WriteLine("invalid option");
+                    break;
+            }
 
         }
     }
