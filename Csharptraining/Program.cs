@@ -1,4 +1,6 @@
-﻿namespace Csharptraining
+﻿using System.Numerics;
+
+namespace Csharptraining
 {
     internal class Program
     {
@@ -179,12 +181,78 @@
                     Console.WriteLine("invalid option");
                     break;
             }
+            //////////////////////////////////////////////////////////////////////////////////
+            ///
+
             //task3
             Console.WriteLine(accountNumber);
             Console.WriteLine(holderName);
             Console.WriteLine(balance);
             Console.WriteLine(isActive);
             Console.WriteLine(accountType);
+
+
+            Console.WriteLine("select a number: ");
+                int SubMenue = Convert.ToInt32(Console.ReadLine());
+            switch (SubMenue) { 
+            
+                //Account Number
+            case 1:
+                    Console.WriteLine("100432", accountNumber);
+                        break;
+                    
+                    //Holder Name
+
+                case 2:
+                    Console.WriteLine("Sara Al-Balushi", holderName);
+                    break;
+
+                    //Balance
+
+                case 3:
+                    Console.WriteLine("ACCnumber: 12,500.000 OMR", balance);
+                    break;
+
+                    //Account Status
+
+                case 4:
+                    Console.WriteLine("Sara Al-Balushi", isActive);
+                    break;
+
+                    //Account Type
+
+                case 5:
+                    Console.WriteLine("Sara Al-Balushi", accountType);
+                    break;
+
+                    //Back
+
+
+                case 0:
+                    Console.WriteLine("Back");
+                    break;
+
+                //'Field not available.'
+
+                default:
+                    Console.WriteLine("select failed");
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
 
         }
     }
