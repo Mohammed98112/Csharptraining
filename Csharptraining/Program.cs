@@ -185,11 +185,15 @@ namespace Csharptraining
             ///
 
             //task3
-            Console.WriteLine(accountNumber);
-            Console.WriteLine(holderName);
-            Console.WriteLine(balance);
-            Console.WriteLine(isActive);
-            Console.WriteLine(accountType);
+            Console.WriteLine("=== VIEW ACCOUNT DATA ===");
+            Console.WriteLine("Data loaded from system setup");
+            Console.WriteLine("1)", accountNumber);
+            Console.WriteLine("2)", holderName);
+            Console.WriteLine("3)", balance);
+            Console.WriteLine("4)", isActive);
+            Console.WriteLine("5)", accountType);
+            Console.WriteLine("0) Back");
+
 
 
             Console.WriteLine("select a number: ");
@@ -247,6 +251,15 @@ namespace Csharptraining
 
             //Task 4
 
+            Console.WriteLine("=== AUTHENTICATION ===");
+            Console.WriteLine("1) Enter PIN");
+            Console.WriteLine("2) Forgot PIN");
+            Console.WriteLine("0) Back");
+            Console.WriteLine("Select: _");
+            Console.WriteLine("> Enter PIN: ****");
+            Console.WriteLine("Access granted. Welcome, Sara Al-Balushi.");
+
+
             int CORRECT_PIN = 4821;
             int MAX_ATTEMPTS = 3;
 
@@ -294,8 +307,66 @@ namespace Csharptraining
                     Console.WriteLine("Invalid selection.");
                     break;
 
+                    ////////////////////////////////////
+                    ///
 
 
+                    //Task 5
+
+                    Console.WriteLine("=== PRINT RECEIPT ===");
+                    Console.WriteLine("1) Short Receipt");
+                    Console.WriteLine("2) Detailed Receipt");
+                    Console.WriteLine("3) Detailed Receipt");
+                    Console.WriteLine("0) Back");
+                    Console.WriteLine("Select: _");
+                    Console.WriteLine("> Enter PIN: ****");
+                    Console.WriteLine("Access granted. Welcome, Sara Al-Balushi.");
+
+
+
+                    Console.WriteLine("Receipt menu: 1) Short Receipt 2) Detailed Receipt 3) Balance Only 0) Back.");
+
+                    Console.WriteLine("enter a number: ");
+                    int ReceiptMenue = Convert.ToInt32(Console.ReadLine());
+
+                    switch (ReceiptMenue) {
+
+                        //1) Short Receipt
+
+                        case 1:
+                            Console.WriteLine(holderName + accountNumber + balance);
+                            break;
+
+                        //2) Detailed Receipt
+
+                        case 2:
+                            Console.WriteLine("Account: ****0432");
+                            Console.WriteLine("Holder : Sara Al-Balushi");
+                            Console.WriteLine("Balance : 12,500.000 OMR");
+                            break;
+
+                        case 3:
+                            Console.WriteLine("Balance : 12,500.000 OMR");
+                            break;
+
+                        case 0:
+                            Console.WriteLine("'Returning to ATM Services...'");
+                            break;
+
+                        default:
+                            Console.WriteLine("Invalid receipt");
+                            break;
+
+
+
+
+
+
+
+
+
+
+                    }
 
 
 
