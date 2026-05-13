@@ -238,6 +238,62 @@ namespace Csharptraining
                     Console.WriteLine("select failed");
                     break;
 
+            }
+
+
+            ////////////////////////////////////////////////
+            ///
+
+
+            //Task 4
+
+            int CORRECT_PIN = 4821;
+            int MAX_ATTEMPTS = 3;
+
+            Console.WriteLine("Choose a number: ");
+            int Choice = Convert.ToInt32(Console.ReadLine());
+
+            switch (Choice) { 
+            
+            case 1:
+
+                    Console.WriteLine("enter Your PIN: ");
+                        int PIN = Convert.ToInt32(Console.ReadLine());
+
+                    if (PIN == CORRECT_PIN)
+                    {
+                        Console.WriteLine("'Access granted. Welcome", holderName);
+
+                    }
+
+
+                    else if (PIN != 4)
+                    {
+
+                        Console.WriteLine("Invalid PIN format");
+
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("'Incorrect PIN.'");
+
+
+                    }
+                        break;
+
+                case 2:
+                    Console.WriteLine("'Please visit the nearest branch with your National ID.'");
+                    break;
+
+                case 0:
+                    Console.WriteLine("Back");
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid selection.");
+                    break;
+
 
 
 
