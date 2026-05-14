@@ -34,6 +34,7 @@
             ///
 
             //3 Main Menu (Region 2)
+            //4 Sub-Menu Options (Region 3)
 
             int option;
                 bool exit = false;
@@ -52,25 +53,41 @@
 
                     Console.WriteLine("enter your choice: ");
                     option = Convert.ToInt32(Console.ReadLine());
-                    switch (option)
+                Console.Clear();
+
+                switch (option)
                     {
 
                         //1. Patient Management
                         case 1:
-                            Console.Clear();
-                            Console.WriteLine("Patient Management");
+                        Console.WriteLine("PATIENT MANAGEMENT");
+                        Console.WriteLine("1. Add New Patient");
+                        Console.WriteLine("2. Display All Patients");
+                        Console.WriteLine("3. Update Patient Phone");
+                        Console.WriteLine("4. Delete Patient ");
+                        Console.WriteLine("0. Back to Main Menu");
+
                             break;
 
                         //2. Doctor Management
                         case 2:
-                            Console.Clear();
-                            Console.WriteLine("Doctor Management");
+                        Console.WriteLine("DOCTOR MANAGEMENT");
+                        Console.WriteLine("1. Add New Doctor");
+                        Console.WriteLine("2. Display All Doctors");
+                        Console.WriteLine("3. Update Consultation Fee");
+                        Console.WriteLine("4. Delete Doctor");
+                        Console.WriteLine("0. Back to Main Menu");
                             break;
 
                         //3. Appointment Management
                         case 3:
-                            Console.Clear();
-                            Console.WriteLine("Appointment Management");
+                        Console.WriteLine("APPOINTMENT MANAGEMENT");
+                        Console.WriteLine("1. Book New Appointmen");
+                        Console.WriteLine("2. Display All Appointments");
+                        Console.WriteLine("3. Update Appointment Status");
+                        Console.WriteLine("4. Cancel Appointment");
+                        Console.WriteLine("0. Back to Main Menu");
+
                             break;
 
                         //0. Exit
