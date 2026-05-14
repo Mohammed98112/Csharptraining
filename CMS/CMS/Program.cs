@@ -28,7 +28,7 @@
                 string a3Patient = ""; string a3Doctor = ""; string a3Date = ""; string a3Status =
                 ""; bool a3Active = false;
                 int appointmentCount = 0;
-
+            int option2;
 
             //////////////////////////////////////////////////////////
             ///
@@ -66,6 +66,38 @@
                         Console.WriteLine("3. Update Patient Phone");
                         Console.WriteLine("4. Delete Patient ");
                         Console.WriteLine("0. Back to Main Menu");
+
+                        Console.WriteLine("enter your choice: ");
+                        option2 = Convert.ToInt32(Console.ReadLine());
+                        switch (option2)
+                        {
+
+                            case 1:
+                                
+                                Console.WriteLine("");
+                                if (patientCount == MAX_PATIENTS)
+                                {
+                                    Console.WriteLine("\"Clinic is full. Cannot add more patients.");
+                                }
+
+                                break;
+
+                            case 2:
+                                Console.WriteLine("");
+                                break;
+
+                            case 3:
+                                Console.WriteLine("");
+                                break;
+
+                            case 4:
+                                Console.WriteLine("");
+                                break;
+
+                            case 0:
+                                Console.WriteLine("Exit");
+
+                        }
 
                             break;
 
