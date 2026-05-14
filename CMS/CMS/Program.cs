@@ -30,6 +30,79 @@
                 int appointmentCount = 0;
 
 
+            //////////////////////////////////////////////////////////
+            ///
+
+            //3 Main Menu (Region 2)
+
+            int option;
+                bool exit = false;
+
+                do
+                {
+
+
+
+
+                    Console.WriteLine("CLINIC MANAGEMENT SYSTEM");
+                    Console.WriteLine("1. Patient Management");
+                    Console.WriteLine("2. Doctor Management");
+                    Console.WriteLine("3. Appointment Management");
+                    Console.WriteLine("0. Exit");
+
+                    Console.WriteLine("enter your choice: ");
+                    option = Convert.ToInt32(Console.ReadLine());
+                    switch (option)
+                    {
+
+                        //1. Patient Management
+                        case 1:
+                            Console.Clear();
+                            Console.WriteLine("Patient Management");
+                            break;
+
+                        //2. Doctor Management
+                        case 2:
+                            Console.Clear();
+                            Console.WriteLine("Doctor Management");
+                            break;
+
+                        //3. Appointment Management
+                        case 3:
+                            Console.Clear();
+                            Console.WriteLine("Appointment Management");
+                            break;
+
+                        //0. Exit
+                        case 0:
+                            Console.WriteLine("Exit");
+                        exit = true;
+                            break;
+
+                        //Invalid option
+                        default:
+                            Console.WriteLine("Patient Management");
+                            break;
+
+
+
+
+
+
+
+
+
+
+                    }
+
+
+
+
+
+
+
+
+                } while (exit == false);
 
 
 
